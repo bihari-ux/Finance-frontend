@@ -867,7 +867,7 @@ export default function Expense() {
         </div>
       </div>
 
-      <div className="container W-100 mx-auto px-6 py-8">
+      <div className="w-full mx-auto px-6 py-8">
         {/* Tab Navigation */}
         <div className="flex space-x-1 bg-white/60 backdrop-blur-sm border border-white/30 shadow-lg rounded-lg p-1 mb-8">
           {["dashboard", "transactions", "analytics", "goals"].map((tab) => (

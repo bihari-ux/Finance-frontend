@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const API_URL = "https://finance-backend-1-itk5.onrender.com";
+const API_URL = "http://localhost:4000/api/pricing-plans";
 
 export default function PricingPage() {
   const [plans, setPlans] = useState([]);
@@ -199,8 +199,8 @@ export default function PricingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen mt-16 bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
+      <div className=" mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
