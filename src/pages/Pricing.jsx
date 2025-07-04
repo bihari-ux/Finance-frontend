@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const API_URL = "http://localhost:4000/api/pricing-plans";
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_URL = "${API_BASE_URL}/api/pricing-plans";
 
 export default function PricingPage() {
   const [plans, setPlans] = useState([]);
