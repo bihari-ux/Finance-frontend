@@ -41,10 +41,9 @@ function SignUpPage() {
     setIsLoading(true);
 
     try {
-      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
-      // Replace with actual API call
+      
       const response = await fetch(`http://localhost:4000/api/auth/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

@@ -6,8 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import LoginPage from "./pages/LoginPage";
-import SignUpPage from "./pages/SignupPage";
+
 import HomePage from "./pages/HomePage";
 import CustomNavbar from "./components/Navbar"; 
 import Dashboard from "./pages/Dashboard ";
@@ -17,6 +16,8 @@ import Transactions from "./pages/Transactions";
 import Footer from "./components/Footer";
 import Profile from "./pages/Profile";
 import Pricing from "./pages/Pricing";
+import SignUpPage from "./pages/SignupPage";
+import LoginPage from "./pages/LoginPage";
 
 
 
@@ -35,7 +36,7 @@ const App = () => {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/transactions" element={<Transactions />} />
-          <Route path="/logIn" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<SignUpPage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<Navigate to="/" replace />} />
