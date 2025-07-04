@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const API_URL = "http://localhost:4000/api/pricing-plans";
+const API_URL = "https://finance-backend-1-itk5.onrender.com";
 
 export default function PricingPage() {
   const [plans, setPlans] = useState([]);

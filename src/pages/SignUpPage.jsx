@@ -44,11 +44,14 @@ function SignUpPage() {
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
       
-      const response = await fetch(`http://localhost:4000/api/auth/register`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(signupInfo),
-      });
+      const response = await fetch(
+        `https://finance-backend-1-itk5.onrender.com`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(signupInfo),
+        }
+      );
 
       const result = await response.json();
       const { success, message, error } = result;

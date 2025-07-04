@@ -36,12 +36,15 @@ function LoginPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:4000/api/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-        body: JSON.stringify(loginInfo),
-      });
+      const response = await fetch(
+        "https://finance-backend-1-itk5.onrender.com",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+          body: JSON.stringify(loginInfo),
+        }
+      );
 
       const result = await response.json();
 
